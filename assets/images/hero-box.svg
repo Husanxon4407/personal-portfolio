@@ -1,0 +1,80 @@
+<svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 800 1000"
+        width="800"
+        height="1000"
+        fill="none"
+>
+    <defs>
+
+        <!-- Main portfolio gradient -->
+        <linearGradient
+                id="heroGradient"
+                x1="400"
+                y1="0"
+                x2="400"
+                y2="1000"
+                gradientUnits="userSpaceOnUse"
+        >
+            <stop offset="0%" stop-color="#6366F1"/>
+            <stop offset="50%" stop-color="#4F46E5"/>
+            <stop offset="100%" stop-color="#3730A3"/>
+        </linearGradient>
+
+        <!-- Soft geometric pattern -->
+        <pattern
+                id="heroPattern"
+                width="150"
+                height="150"
+                patternUnits="userSpaceOnUse"
+        >
+            <path
+                    d="M20 20L90 75L20 130Z"
+                    fill="white"
+                    fill-opacity=".10"
+            />
+
+            <path
+                    d="M105 20L145 50L105 80Z"
+                    fill="white"
+                    fill-opacity=".07"
+            />
+        </pattern>
+
+        <!-- Main shape -->
+        <path
+                id="heroShape"
+                d="
+                M110 55
+                Q110 0 165 0
+                H635
+                Q690 0 690 55
+
+                V680
+
+                C690 850 580 950 400 1000
+                C220 950 110 850 110 680
+
+                Z
+            "
+        />
+
+    </defs>
+
+
+    <!-- Main blue shape -->
+
+    <use
+            href="#heroShape"
+            fill="url(#heroGradient)"
+    />
+
+
+    <!-- Geometric pattern -->
+
+    <use
+            href="#heroShape"
+            fill="url(#heroPattern)"
+    />
+
+</svg>
