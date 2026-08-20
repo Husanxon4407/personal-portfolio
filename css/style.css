@@ -243,10 +243,10 @@ section {
     gap: 50px;
 }
 
-.hero-left{
-    flex: 1;
-    text-align: left;
-}
+/*.hero-left{*/
+/*    flex: 1;*/
+/*    text-align: left;*/
+/*}*/
 
 /* =========================================================
    HERO LEFT
