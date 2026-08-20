@@ -231,7 +231,7 @@ section {
     width: min(1200px,calc(100% - 80px));
     height: 100%;
     min-height: 0;
-    margin-top: 0 auto;
+    margin:0 auto;
     display: grid;
 
     grid-template-columns:
@@ -262,6 +262,7 @@ section {
     text-align: left;
 
     padding-top: 0;
+    min-height: 0;
 }
 
 .hero-buttons, .hero-social{
@@ -347,24 +348,24 @@ RIGHT HERO
 .hero-title {
 
     font-size:
-            clamp(1.3rem, 2vw, 1.8rem);
+            clamp(1.25rem, 1.8vw, 1.65rem);
 
-    margin-bottom: 18px;
+    margin-bottom: 12px;
 
     color: #374151;
 
-    line-height: 1.35;
+    line-height: 1.3;
 
 }
 
 .description {
 
-    max-width: 560px;
+    max-width: 540px;
 
     font-size:
-            clamp(.95rem, 1.2vw, 1.1rem);
+            clamp(.92rem, 1.1vw, 1rem);
 
-    line-height: 1.75;
+    line-height: 1.6;
 
     color: #6b7280;
 
@@ -413,7 +414,7 @@ RIGHT HERO
 
     gap: 12px;
 
-    margin-top: 24px;
+    margin-top: 16px;
 }
 
 button{
@@ -436,9 +437,10 @@ button:active{
 .primary-btn{
     background:var(--primary);
     color:white;
-    padding:16px 34px;
+    padding:12px 24px;
     border-radius:12px;
     font-weight:600;
+    font-size: .92rem;
 }
 
 .primary-btn:hover{
@@ -454,9 +456,10 @@ button:active{
     background:white;
     border:2px solid var(--primary);
     color:var(--primary);
-    padding:16px 34px;
+    padding:12px 24px;
     border-radius:12px;
     font-weight:600;
+    font-size: .92rem;
 }
 
 .secondary-btn:hover{
@@ -466,13 +469,13 @@ button:active{
 
 .primary-btn,
 .secondary-btn {
-    padding: 14px 28px;
+    padding: 12px 24px;
 
     border-radius: 12px;
 
     font-weight: 600;
 
-    font-size: 0.95rem;
+    font-size: 0.92rem;
 }
 
 #hero-first-name,
@@ -936,7 +939,7 @@ button:active{
     grid-template-columns:
         repeat(2, minmax(170px, 1fr));
 
-    gap: 16px;
+    gap: 12px;
 
     width: 100%;
     max-width: 440px;
@@ -949,7 +952,7 @@ button:active{
 
     padding: 16px 18px;
 
-    min-height: 78px;
+    min-height: 70px;
 
     border-radius: 18px;
 
@@ -966,13 +969,14 @@ button:active{
 }
 
 .stat-card h3 {
-    margin: 0;
 
     color: var(--primary);
 
-    font-size: 1.55rem;
+    font-size: 1.45rem;
 
     line-height: 1.1;
+
+    margin-bottom: 4px;
 }
 
 .stat-card p {
@@ -980,7 +984,7 @@ button:active{
 
     color: var(--paragraph);
 
-    font-size: 0.88rem;
+    font-size: 0.82rem;
 }
 
 .stat-card:hover{
@@ -1016,7 +1020,7 @@ button:active{
 .hero-visual {
     position: relative;
 
-    height: min(600px, calc(100vh - 135px));
+    height: min(550px, calc(100vh - 150px));
     width: auto;
 
     aspect-ratio: 4 / 5;
@@ -1027,7 +1031,7 @@ button:active{
 
     isolation: isolate;
 
-    transform: translateY(-20px);
+    transform: translateY(-10px);
 }
 
 
@@ -1197,7 +1201,7 @@ button:active{
     left: 7%;
     right: 7%;
 
-    bottom: 110px;
+    bottom: 90px;
 
     min-height: 125px;
 
