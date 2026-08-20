@@ -252,10 +252,10 @@ section {
 
 .hero-left {
     width: 100%;
-    max-width: 500px;
+    max-width: 440px;
 
     min-height: 0;
-
+    padding-left: 22px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -277,7 +277,7 @@ RIGHT HERO
     width: 100%;
     min-height: 0;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 
     margin-top: -15px;
