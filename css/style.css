@@ -234,13 +234,11 @@ section {
     margin:0 auto;
     display: grid;
 
-    grid-template-columns:
-        minmax(0, 0.95fr)
-        minmax(0, 1.05fr);
+    grid-template-columns: 1fr 1fr;
 
     align-items: center;
 
-    gap: 50px;
+    gap: 45px;
 }
 
 /*.hero-left{*/
@@ -277,12 +275,12 @@ RIGHT HERO
 
 .hero-right {
     width: 100%;
-
+    min-height: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    margin-top: 0;
+    margin-top: -15px;
     padding-top: 0;
 }
 
@@ -298,15 +296,15 @@ RIGHT HERO
 .hero-name {
 
     font-size:
-            clamp(2.4rem, 3.2vw, 3.2rem);
+            clamp(2rem, 2.5vw, 2.5rem);
 
-    margin: 0 0 12px;
+    margin: 0 0 10px;
 
-    line-height: 1.05;
+    line-height: 1.03;
 
     letter-spacing: -0.03em;
 
-    font-weight: 800;
+    font-weight: 700;
 
 }
 
@@ -349,9 +347,9 @@ RIGHT HERO
 
 .hero-title {
 
-    font-size: 1.35rem;
+    font-size: 1rem;
 
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 
     color: #374151;
 
@@ -361,11 +359,11 @@ RIGHT HERO
 
 .description {
 
-    max-width: 500px;
+    max-width: 440px;
 
-    font-size: 0.92rem;
+    font-size: 0.84rem;
 
-    line-height: 1.55;
+    line-height: 1.5;
 
     color: #6b7280;
 
@@ -414,7 +412,7 @@ RIGHT HERO
 
     gap: 10px;
 
-    margin-top: 14px;
+    margin-top: 12px;
 }
 
 button{
@@ -469,13 +467,13 @@ button:active{
 
 .primary-btn,
 .secondary-btn {
-    padding: 10px 20px;
+    padding: 8px 16px;
 
     border-radius: 10px;
 
     font-weight: 600;
 
-    font-size: 0.88rem;
+    font-size: 0.82rem;
 }
 
 #hero-first-name,
@@ -863,14 +861,15 @@ button:active{
 
 .hero-left {
     width: 100%;
-    max-width: 570px;
-
+    max-width: 440px;
+    min-height: 0;
     display: flex;
     flex-direction: column;
 
     align-items: flex-start;
 
     text-align: left;
+    padding-top: 0;
 }
 
 .hero-intro {
@@ -887,14 +886,14 @@ button:active{
     justify-content: flex-start;
 
     align-items: center;
-    margin-top: 14px;
+    margin-top: 12px;
 
-    gap: 10px;
+    gap: 8px;
 }
 
 .hero-social a {
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
 
     display: flex;
 
@@ -908,6 +907,8 @@ button:active{
     color: var(--primary);
 
     text-decoration: none;
+
+    font-size: 0.9rem;
 
     box-shadow:
             0 10px 25px rgba(30, 41, 59, 0.09);
@@ -940,22 +941,22 @@ button:active{
     grid-template-columns:
         repeat(2, minmax(170px, 1fr));
 
-    gap: 10px;
+    gap: 8px;
 
     width: 100%;
     max-width: 440px;
 
-    margin-top: 18px;
+    margin-top: 14px;
 }
 
 .stat-card {
     background: rgba(255, 255, 255, 0.88);
 
-    padding: 12px 16px;
+    padding: 10px 14px;
 
-    min-height: 62px;
+    min-height: 55px;
 
-    border-radius: 18px;
+    border-radius: 16px;
 
     border: 1px solid rgba(79, 70, 229, 0.06);
 
@@ -973,11 +974,11 @@ button:active{
 
     color: var(--primary);
 
-    font-size: 1.3rem;
+    font-size: 1.15rem;
 
     line-height: 1.1;
 
-    margin-bottom: 3px;
+    margin-bottom: 2px;
 }
 
 .stat-card p {
@@ -1021,7 +1022,7 @@ button:active{
 .hero-visual {
     position: relative;
 
-    height: min(500px, calc(100vh - 180px));
+    height: min(560px, calc(100vh - 145px));
     width: auto;
 
     aspect-ratio: 4 / 5;
@@ -1032,7 +1033,7 @@ button:active{
 
     isolation: isolate;
 
-    transform: translateY(-25px);
+    transform: translateY(-35px);
 }
 
 
