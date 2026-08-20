@@ -254,15 +254,17 @@ section {
 
 .hero-left {
     width: 100%;
-    max-width: 570px;
+    max-width: 500px;
+
+    min-height: 0;
 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
     text-align: left;
 
     padding-top: 0;
-    min-height: 0;
 }
 
 .hero-buttons, .hero-social{
@@ -296,7 +298,7 @@ RIGHT HERO
 .hero-name {
 
     font-size:
-            clamp(2.7rem, 3.7vw, 3.7rem);
+            clamp(2.4rem, 3.2vw, 3.2rem);
 
     margin: 0 0 12px;
 
@@ -347,8 +349,7 @@ RIGHT HERO
 
 .hero-title {
 
-    font-size:
-            clamp(1.25rem, 1.8vw, 1.65rem);
+    font-size: 1.35rem;
 
     margin-bottom: 12px;
 
@@ -360,12 +361,11 @@ RIGHT HERO
 
 .description {
 
-    max-width: 540px;
+    max-width: 500px;
 
-    font-size:
-            clamp(.92rem, 1.1vw, 1rem);
+    font-size: 0.92rem;
 
-    line-height: 1.6;
+    line-height: 1.55;
 
     color: #6b7280;
 
@@ -412,9 +412,9 @@ RIGHT HERO
 
     align-items: center;
 
-    gap: 12px;
+    gap: 10px;
 
-    margin-top: 16px;
+    margin-top: 14px;
 }
 
 button{
@@ -469,13 +469,13 @@ button:active{
 
 .primary-btn,
 .secondary-btn {
-    padding: 12px 24px;
+    padding: 10px 20px;
 
-    border-radius: 12px;
+    border-radius: 10px;
 
     font-weight: 600;
 
-    font-size: 0.92rem;
+    font-size: 0.88rem;
 }
 
 #hero-first-name,
@@ -887,8 +887,9 @@ button:active{
     justify-content: flex-start;
 
     align-items: center;
+    margin-top: 14px;
 
-    gap: 14px;
+    gap: 10px;
 }
 
 .hero-social a {
@@ -939,20 +940,20 @@ button:active{
     grid-template-columns:
         repeat(2, minmax(170px, 1fr));
 
-    gap: 12px;
+    gap: 10px;
 
     width: 100%;
     max-width: 440px;
 
-    margin-top: 30px;
+    margin-top: 18px;
 }
 
 .stat-card {
     background: rgba(255, 255, 255, 0.88);
 
-    padding: 16px 18px;
+    padding: 12px 16px;
 
-    min-height: 70px;
+    min-height: 62px;
 
     border-radius: 18px;
 
@@ -972,11 +973,11 @@ button:active{
 
     color: var(--primary);
 
-    font-size: 1.45rem;
+    font-size: 1.3rem;
 
     line-height: 1.1;
 
-    margin-bottom: 4px;
+    margin-bottom: 3px;
 }
 
 .stat-card p {
@@ -984,7 +985,7 @@ button:active{
 
     color: var(--paragraph);
 
-    font-size: 0.82rem;
+    font-size: 0.72rem;
 }
 
 .stat-card:hover{
@@ -1020,7 +1021,7 @@ button:active{
 .hero-visual {
     position: relative;
 
-    height: min(550px, calc(100vh - 150px));
+    height: min(500px, calc(100vh - 180px));
     width: auto;
 
     aspect-ratio: 4 / 5;
@@ -1031,7 +1032,7 @@ button:active{
 
     isolation: isolate;
 
-    transform: translateY(-10px);
+    transform: translateY(-25px);
 }
 
 
@@ -6051,10 +6052,11 @@ section{
 
 
 .hero-container{
-
-    width:min(1440px,94%);
-
-    margin:0 auto;
+    width: min(1200px, calc(100% - 80px));
+    /*width:min(1440px,94%);*/
+    height: 100%;
+    min-height: 0;
+    margin: 0 auto;
 
     display:grid;
 
@@ -6064,13 +6066,14 @@ section{
 
     align-items:center;
 
-    gap:55px;
+    gap:40px;
 }
 
 
 .hero-right{
 
     width:100%;
+    min-height: 0;
 
     display:flex;
 
@@ -6078,7 +6081,8 @@ section{
 
     align-items:center;
 
-    margin-top:0;
+    margin-top: -10px;
+    padding-top:0;
 }
 
 
@@ -9752,5 +9756,11 @@ body.dark .nav-links a.active,
 
 .hero-right {
     padding-top: 35px;
+}
+
+.navbar-container,
+.hero-container {
+    width: min(1200px, calc(100% - 80px));
+    margin: 0 auto;
 }
 
