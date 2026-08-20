@@ -211,7 +211,7 @@ section {
    ========================================================= */
 
 .hero {
-    height: calc(100vh - 80px);
+    height: calc(100vh - 60px);
     min-height: 0;
     margin-top: 80px;
     padding: 25px 0;
@@ -556,7 +556,7 @@ button:active{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 60px;
 }
 
 .logo{
