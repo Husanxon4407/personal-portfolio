@@ -121,7 +121,7 @@ img{
 }
 
 .container{
-    width:min(1440px,94%);
+    width:min(1200px,calc(100% - 80px));
     margin:0 auto;
 }
 
@@ -211,21 +211,14 @@ section {
    ========================================================= */
 
 .hero {
-
-    min-height: auto;
-
-    padding: 120px 0 35px;
-
+    min-height: calc(100vh - 80px);
+    margin-top: 80px;
+    padding: 30px 0;
     display: flex;
-
     align-items: center;
-
     position: relative;
-
     overflow: hidden;
-
     box-sizing: border-box;
-
     background: var(--background);
 }
 
@@ -233,23 +226,19 @@ section {
    HERO CONTAINER
    ========================================================= */
 
-.hero-container{
+.hero-container {
+    width: 100%;
+    min-height: calc(100vh - 140px);
 
-    /*width:min(1440px,94%);*/
-
-    /*margin:0 auto;*/
-
-    display:grid;
+    display: grid;
 
     grid-template-columns:
-        minmax(0,.9fr)
-        minmax(0,1.1fr);
+        minmax(0, 0.95fr)
+        minmax(0, 1.05fr);
 
-    align-items:center;
+    align-items: center;
 
-    gap:55px;
-
-    width: 100%;
+    gap: 50px;
 }
 
 .hero-left{
@@ -262,20 +251,15 @@ section {
    ========================================================= */
 
 .hero-left {
-
     width: 100%;
-
     max-width: 570px;
 
     display: flex;
-
     flex-direction: column;
-
     align-items: flex-start;
-
     text-align: left;
 
-    padding-top: 120px;
+    padding-top: 0;
 }
 
 .hero-buttons, .hero-social{
@@ -286,19 +270,15 @@ section {
 RIGHT HERO
 ==========================*/
 
-.hero-right{
+.hero-right {
+    width: 100%;
 
-    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    margin-top:0;
-
-    padding-top: 120px;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 .greeting{
@@ -1034,13 +1014,9 @@ button:active{
 .hero-visual {
     position: relative;
 
-    width: min(100%, 640px);
+    height: min(625px, calc(100vh - 150px));
+    width: auto;
 
-    /*
-       Keep the same proportion as our SVG.
-       This makes the box and its decorations
-       scale together much more predictably.
-    */
     aspect-ratio: 4 / 5;
 
     display: flex;
@@ -1049,10 +1025,7 @@ button:active{
 
     isolation: isolate;
 
-    /*
-       Move the whole visual slightly upward.
-    */
-    transform: translateY(-25px);
+    transform: translateY(0);
 }
 
 
@@ -1222,7 +1195,7 @@ button:active{
     left: 7%;
     right: 7%;
 
-    bottom: 150px;
+    bottom: 110px;
 
     min-height: 125px;
 
